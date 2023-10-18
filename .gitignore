@@ -1,0 +1,25 @@
+# Ignore compiled files
+*.class
+*.o
+*.pyc
+
+# Ignore dependencies
+/node_modules
+/bower_components
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore log files
+*.log
+
+# Ignore database files
+*.db
+
+# Ignore IDE files
+.idea
+.vscode
+
+# Ignore migrations folder
+migrations/
