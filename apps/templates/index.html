@@ -4,7 +4,11 @@
     <title>Users</title>
   </head>
   <body>
+    <a href="/login">Logout</a>
     <h1>Users</h1>
+    {% if username %}
+      <p>Welcome, {{ username }}!</p>
+    {% endif %}
     <table>
       <thead>
         <tr>
@@ -13,10 +17,10 @@
         </tr>
       </thead>
       <tbody>
-        {% for row in rows %}
+        {% for user in users %}
         <tr>
-          <td>{{ row[1] }}</td>
-          <td>{{ row[2] }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.password }}</td>
         </tr>
         {% endfor %}
       </tbody>
