@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template, request, redirect, session
 from apps.config import Config
-from apps.auth.user import db, migrate
+from apps.auth.user import db, migrate, login_manager
 
 from .auth.routes import auth_bp
 from .home.routes import home_bp
@@ -10,6 +10,9 @@ from .home.routes import home_bp
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
+
+    # Initialize Login_manager
+    login_manager.init_app(app)
 
     # Initialize SQLAlchemy
     db.init_app(app)
