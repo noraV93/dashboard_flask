@@ -2,10 +2,10 @@ import os
 
 from flask import Flask, render_template, request, redirect, session
 from apps.config import Config
-from apps.models import db, migrate
+from apps.auth.user import db, migrate
 
-from .auth.auth import auth_bp
-from .home.home import home_bp
+from .auth.routes import auth_bp
+from .home.routes import home_bp
 
 def create_app():
     app = Flask(__name__)

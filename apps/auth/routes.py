@@ -1,7 +1,7 @@
-from flask import Blueprint, render_template, request, redirect, session
-from ..models import User
+from flask import render_template, request, redirect, session
+from .user import User
 
-auth_bp = Blueprint('auth', __name__)
+from apps.auth import auth_bp
 
 @auth_bp.route('/login', methods=['GET', 'POST'])
 def login():

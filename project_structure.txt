@@ -1,0 +1,22 @@
+.
+├── apps
+│   ├── __init__.py
+│   ├── auth
+│   │   └── auth.py
+│   ├── config.py
+│   ├── home
+│   │   ├── __init__.py
+│   │   └── routes.py
+│   ├── models.py
+│   └── templates
+│       ├── base.html
+│       ├── dashboard.html
+│       ├── index.html
+│       ├── login.html
+│       ├── maps.html
+│       └── user_profile.html
+├── project_structure.txt
+├── requirements.txt
+└── run.py
+
+4 directories, 15 files
