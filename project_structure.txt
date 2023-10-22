@@ -1,13 +1,18 @@
+// tree -I 'venv|__pycache__|migrations' > project_structure.txt
 .
 ├── apps
 │   ├── __init__.py
 │   ├── auth
-│   │   └── auth.py
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   └── user.py
 │   ├── config.py
 │   ├── home
 │   │   ├── __init__.py
-│   │   └── routes.py
-│   ├── models.py
+│   │   ├── dashboard.py
+│   │   ├── maps.py
+│   │   ├── routes.py
+│   │   └── user_profile.py
 │   └── templates
 │       ├── base.html
 │       ├── dashboard.html
@@ -19,4 +24,4 @@
 ├── requirements.txt
 └── run.py
 
-4 directories, 15 files
+4 directories, 19 files
