@@ -2,6 +2,7 @@
 *.class
 *.o
 *.pyc
+__pycache__/
 
 # Ignore dependencies
 /node_modules
